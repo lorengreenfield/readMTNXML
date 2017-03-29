@@ -1,0 +1,153 @@
+<report name="Test Resort"
+        updated="1490776200"
+        units="USC">
+    <operations resortStatus="Open"
+                openTime="08:30"
+                closeTime="16:30"/>
+    <currentConditions>
+        <resortwide totalArea="9.00"
+                    totalLength="9.00"
+                    totalAreaOpen="9.00"
+                    totalLengthOpen="9.00"
+                    numTrailsOpen="9"
+                    numTrailsGroomed="0"
+                    numTrailsSnowMaking="0"
+                    numLiftsOpen="3"
+                    numParksOpen="2"/>
+        <resortLocations>
+            <location name="Radius"
+                      primarySurface="Packed Powder"
+                      secondarySurface="Powder"
+                      base="101"
+                      snowOverNight="2"
+                      snow12Hours="1"
+                      snow24Hours="12"
+                      snow48Hours="20"
+                      snow72Hours="23"
+                      snow7Days="40"
+                      snowSeasonTotal="210"
+                      weatherConditions="Clear"
+                      temperature="40"
+                      visibility="100"
+                      windDirection="N"
+                      windSpeed="3"/>
+        </resortLocations>
+    </currentConditions>
+    <forecast>
+        <day name="Wednesday"
+             high="45°F"
+             low="25°F"
+             weather="Mostly Sunny"
+             icon="1">Mostly Sunny, with a high near 45°F and a low near 25°F
+        </day>
+        <day name="Thursday"
+             high="44°F"
+             low="21°F"
+             weather="Mostly Sunny"
+             icon="1">Mostly Sunny, with a high near 44°F and a low near 21°F
+        </day>
+        <day name="Friday"
+             high="37°F"
+             low="30°F"
+             weather="Snow"
+             icon="5">Snow (77% chance), with a high near 37°F and a low near 30°F
+        </day>
+        <day name="Saturday"
+             high="36°F"
+             low="28°F"
+             weather="Chance Snow"
+             icon="5">Chance Snow (76%), with a high near 36°F and a low near 28°F
+        </day>
+        <day name="Sunday"
+             high="45°F"
+             low="26°F"
+             weather="Partly Sunny"
+             icon="4">Partly Sunny, with a high near 45°F and a low near 26°F
+        </day>
+    </forecast>
+    <comments>
+        <comment name="Weather">Great weather today</comment>
+        <comment name="Snow">Best snow in 10 years!</comment>
+        <comment name="Events">SnowFest on today.</comment>
+    </comments>
+    <facilities>
+        <areas>
+            <area name="Radius">
+                <lifts>
+                    <lift name="Explorer"
+                          status="Open"
+                          waitTime="4"/>
+                    <lift name="Headwaters"
+                          status="Open"
+                          waitTime="3"/>
+                    <lift name="Challenger"
+                          status="Open"
+                          waitTime="2"/>
+                </lifts>
+                <trails>
+                    <trail name="Crosscut"
+                           status="Open"
+                           groomed="No"
+                           snowMaking="No"
+                           difficulty="novice"/>
+                    <trail name="Cruiser"
+                           status="Open"
+                           groomed="No"
+                           snowMaking="No"
+                           difficulty="novice"/>
+                    <trail name="Sunset"
+                           status="Open"
+                           groomed="No"
+                           snowMaking="No"
+                           difficulty="novice"/>
+                    <trail name="Big Dipper"
+                           status="Open"
+                           groomed="No"
+                           snowMaking="No"
+                           difficulty="intermediate"/>
+                    <trail name="Exodus"
+                           status="Open"
+                           groomed="No"
+                           snowMaking="No"
+                           difficulty="intermediate"/>
+                    <trail name="Gulch"
+                           status="Open"
+                           groomed="No"
+                           snowMaking="No"
+                           difficulty="intermediate"/>
+                    <trail name="Safari"
+                           status="Open"
+                           groomed="No"
+                           snowMaking="No"
+                           difficulty="advanced"/>
+                    <trail name="Silver Knife"
+                           status="Open"
+                           groomed="No"
+                           snowMaking="No"
+                           difficulty="advanced"/>
+                    <trail name="Ambush"
+                           status="Open"
+                           groomed="No"
+                           snowMaking="No"
+                           difficulty="advanced"/>
+                </trails>
+                <freestyleTerrain>
+                    <parks>
+                        <park name="Boardercross"
+                              status="Open"
+                              groomedOrCut="Yes"/>
+                    </parks>
+                    <pipes>
+                        <pipe name="Halfpipe"
+                              status="Open"
+                              groomedOrCut="Yes"/>
+                    </pipes>
+                </freestyleTerrain>
+                <specialTerrain>
+                    <terrain name="Tubing"
+                             status="Open"/>
+                </specialTerrain>
+            </area>
+        </areas>
+    </facilities>
+</report>
