@@ -2,6 +2,7 @@ import chai, {expect} from 'chai';
 import dirtyChai from 'dirty-chai';
 chai.use(dirtyChai);
 
+import request from 'request';
 import readMTNXML from './readMTNXML';
 
 describe('readMTNXML', function(){
@@ -20,10 +21,15 @@ describe('readMTNXML', function(){
 
     });
 
-    it('Should return a fake positive result', function(){
-        expect(true).to.equal(true);
+    it('Has a top level report object', function(done){
+
+        readMTNXML('http://reportpal-cdn.resorts-interactive.com/mtnxml/63', function(err, response){
+
+            expect(response).to.have.property('report').that.is.an('object');
+            done();
+        }, request);
+
     });
 
 
-    //TODO - should probably use proxyquire to stub browser-require and feed in an actual MTN.XML feed from a local file to test
 });

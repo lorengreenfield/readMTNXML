@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test readMTNXML</title>
+    <script src="./dist/readMTNXML.js"></script>
+</head>
+<body>
+<script>
+
+    readMTNXML('http://reportpal-dev.resorts-interactive.com/mtnxml/1757', function(err, response){
+       buildMySnowReport(response);
+    });
+
+    function buildMySnowReport(mtnxmlObject){
+        console.log(mtnxmlObject);
+    }
+
+</script>
+</body>
+</html>
