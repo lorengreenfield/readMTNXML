@@ -1,10 +1,10 @@
 {
   "name": "readmtnxml",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "Javascript function to read a MTN.XML feed and convert it to a JavaScript object for use within your web page",
   "main": "readMTNXML.js",
   "scripts": {
-    "test": "mocha --require reify 'test.js'",
+    "test": "mocha --require reify --require jsdom-global/register 'test.js'",
     "prod:build": "NODE_PATH=./ NODE_ENV=production browserify -t [ babelify --presets [ es2015 ] ] -g envify readMTNXML.js | NODE_ENV=production node_modules/uglify-js-harmony/bin/uglifyjs --define --compress drop_console -o dist/readMTNXML.js --preamble \"/*\nreadMTNXML $(echo $npm_package_version)\nCopyright 2017-$(date +\"%Y\") PURPLE HALO LIMITED\n*/\"",
     "dev:build:watch": "NODE_ENV=development watchify -v -t [ babelify --sourceMapsAbsolute ] -g envify --debug readMTNXML.js --outfile ./dist/readMTNXML.js",
     "versionbump:fix": "npm version patch --no-git-tag-version",
