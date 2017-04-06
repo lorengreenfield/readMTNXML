@@ -1,6 +1,6 @@
 {
   "name": "readmtnxml",
-  "version": "0.1.5",
+  "version": "1.0.0",
   "description": "Javascript function to read a MTN.XML feed and convert it to a JavaScript object for use within your web page",
   "main": "readMTNXML.js",
   "scripts": {
@@ -29,8 +29,8 @@
   },
   "homepage": "https://github.com/inteREACT/readMTNXML#readme",
   "dependencies": {
-    "xml2js": "^0.4.17",
-    "browser-request": "^0.3.3"
+    "axios": "^0.16.0",
+    "xml2js": "^0.4.17"
   },
   "devDependencies": {
     "babel-plugin-transform-es2015-modules-commonjs": "^6.24.0",
@@ -44,7 +44,6 @@
     "jsdom-global": "^2.1.1",
     "mocha": "^3.2.0",
     "reify": "^0.6.7",
-    "request": "^2.81.0",
     "uglify-js-harmony": "^2.7.5",
     "watchify": "^3.9.0"
   }

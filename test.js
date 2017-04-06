@@ -1,9 +1,7 @@
 import chai, {expect} from 'chai';
 import dirtyChai from 'dirty-chai';
-chai.use(dirtyChai);
-
-import request from 'request';
 import readMTNXML from './readMTNXML';
+chai.use(dirtyChai);
 
 describe('readMTNXML', function(){
 
@@ -27,7 +25,7 @@ describe('readMTNXML', function(){
 
             expect(response).to.have.property('report').that.is.an('object');
             done();
-        }, request);
+        });
 
     });
 
