@@ -1,6 +1,6 @@
 {
   "name": "readmtnxml",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Javascript function to read a MTN.XML feed and convert it to a JavaScript object for use within your web page",
   "main": "readMTNXML.js",
   "scripts": {

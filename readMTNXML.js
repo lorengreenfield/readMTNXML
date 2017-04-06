@@ -34,6 +34,3 @@ function parseXML(xml, callback){
         callback(null, result);
     });
 }
-
-
-window.readMTNXML = readMTNXML;
