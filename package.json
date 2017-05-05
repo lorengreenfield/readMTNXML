@@ -1,6 +1,6 @@
 {
   "name": "readmtnxml",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Javascript function to read a MTN.XML feed and convert it to a JavaScript object for use within your web page",
   "main": "readMTNXML.js",
   "scripts": {
@@ -12,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/inteREACT/readMTNXML.git"
+    "url": "git+https://github.com/lorengreenfield/readMTNXML.git"
   },
   "keywords": [
     "MTN.XML",
@@ -22,12 +22,12 @@
     "report",
     "reader"
   ],
-  "author": "Purple Halo Limited",
+  "author": "Loren Greenfield",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/inteREACT/readMTNXML/issues"
+    "url": "https://github.com/lorengreenfield/readMTNXML/issues"
   },
-  "homepage": "https://github.com/inteREACT/readMTNXML#readme",
+  "homepage": "https://github.com/lorengreenfield/readMTNXML#readme",
   "dependencies": {
     "axios": "^0.16.0",
     "xml2js": "^0.4.17"
