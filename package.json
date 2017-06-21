@@ -1,11 +1,14 @@
 {
   "name": "readmtnxml",
-  "version": "1.0.2",
+  "version": "1.2.0",
   "description": "Javascript function to read a MTN.XML feed and convert it to a JavaScript object for use within your web page",
-  "main": "readMTNXML.js",
+  "main": "dist/index.js",
+  "module": "readMTNXML.js",
+  "jsnext:main": "readMTNXML.js",
   "scripts": {
     "test": "mocha --require reify --require jsdom-global/register 'test.js'",
-    "prod:build": "NODE_PATH=./ NODE_ENV=production browserify -t [ babelify --presets [ es2015 ] ] -g envify readMTNXML.js | NODE_ENV=production node_modules/uglify-js-harmony/bin/uglifyjs --define --compress drop_console -o dist/readMTNXML.js --preamble \"/*\nreadMTNXML $(echo $npm_package_version)\nCopyright 2017-$(date +\"%Y\") PURPLE HALO LIMITED\n*/\"",
+    "build": "rollup readMTNXML.js --format cjs --output dist/index.js",
+    "build-publish": "npm run build && npm publish",
     "dev:build:watch": "NODE_ENV=development watchify -v -t [ babelify --sourceMapsAbsolute ] -g envify --debug readMTNXML.js --outfile ./dist/readMTNXML.js",
     "versionbump:fix": "npm version patch --no-git-tag-version",
     "versionbump:feature": "npm version minor --no-git-tag-version"
@@ -44,6 +47,7 @@
     "jsdom-global": "^2.1.1",
     "mocha": "^3.2.0",
     "reify": "^0.6.7",
+    "rollup": "^0.43.0",
     "uglify-js-harmony": "^2.7.5",
     "watchify": "^3.9.0"
   }
